@@ -11,14 +11,14 @@ pipeline {
 
          steps {
 
-          sh 'mvn clean package & java'
+          sh 'mvn clean package'
 }
 }
 
       stage('Deploy') {
 
         steps {
-           sh 'java -jar /target/*.jar &'
+           sh 'java -jar target/*.jar &'
      }
    }
   }
