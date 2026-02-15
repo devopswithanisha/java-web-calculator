@@ -19,7 +19,7 @@ pipeline {
 
         steps {
            sh 'java -jar /target/*.jar &'
-}
-}
-}
+     }
+   }
+  }
 }
